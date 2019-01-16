@@ -1,58 +1,38 @@
 <!-- Card -->
 <div class="row">
-  <div class="col-md-4 mt-1">
+  <div class="col-md-4 mt-1" *ngFor="let texte of texte">
     <mdb-card>
-      <mdb-card-body>
-        <mdb-card-title>
-          <h4>Hanangana ekipa</h4>
-        </mdb-card-title>
-        <mdb-card-text>
-          Hanangana ekipa hanao kotikota
-        </mdb-card-text>
-        <a href="#" mdbBtn color="primary" class="w-100" mdbWavesEffect>Hanangana</a>
-      </mdb-card-body>
-    </mdb-card>
-  </div>
-  <div class="col-md-4 mt-1">
-    <mdb-card>
-      <mdb-card-body>
-        <mdb-card-title>
-          <h4>Mila vonjy</h4>
-        </mdb-card-title>
-        <mdb-card-text>
-          Mila vonjy fa tena tapaka
-        </mdb-card-text>
-        <a href="#" mdbBtn color="primary" class="w-100" mdbWavesEffect>Hanangana</a>
-      </mdb-card-body>
-    </mdb-card>
-  </div>
-  <div class="col-md-4 mt-1">
-    <mdb-card>
-      <mdb-card-body>
-        <mdb-card-title>
-          <h4>Hanangana ekipa</h4>
-        </mdb-card-title>
-        <mdb-card-text>
-          Mila vonjy fa misy marary
-        </mdb-card-text>
-        <a href="#" mdbBtn color="primary" class="w-100" mdbWavesEffect>Hanome</a>
+      <mdb-card-body class="animate zoomIn">
+        <div class="row">
+          <div class="col-md-8">
+            <mdb-card-title>
+              <h4>{{texte.title}}</h4>
+            </mdb-card-title>
+            <mdb-card-text>
+              {{texte.desc}}
+            </mdb-card-text>
+          </div>
+          <div class="col-md-4">
+            <i class="{{texte.icon}}"></i>
+          </div>
+        </div>
+        <a href="#" mdbBtn color="{{texte.color}}" class="w-100" mdbWavesEffect>{{texte.button}}</a>
       </mdb-card-body>
     </mdb-card>
   </div>
 </div>
 
 
-<div class="col-md-4 m-auto" style="margin-top: 10%!important;">
+<div class="col-md-4 m-auto animated rotateIn" style="margin-top: 10%!important;">
   <mdb-card class="koti-action" style="height: 200px;width: 200px;border-radius:50%!important;">
     <div class="flex">
-      <a mdbBtn floating="true" color="primary"  style="border-radius: 50%;display: inline-block;margin: 5px" size="lg" mdbWavesEffect>
+      <a mdbBtn floating="true" color="secondary"  style="border-radius: 50%;display: inline-block;margin: 5px" size="lg" mdbWavesEffect>
         <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
       </a>
-      <a mdbBtn floating="true" color="secondary" style="border-radius: 50%;display: inline-block;margin: 5px" size="lg" mdbWavesEffect>
+      <a mdbBtn floating="true" color="success" style="border-radius: 50%;display: inline-block;margin: 5px" size="lg" mdbWavesEffect>
         <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
       </a>
     </div>
-
   </mdb-card>
 </div>
 

@@ -1,8 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
 
 *{font-family: 'Montserrat', sans-serif;font-weight: 500}
-body{width: 100%;height: 100vh;background: black!important;overflow: hidden;margin: 0;padding: 0}
+body{width: 100%;height: 100vh;
+  overflow: hidden;margin: 0;padding: 0;
+  color: #fff;
+  background: linear-gradient(-45deg, blue, orange, cyan, white);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+}
 .koti-action .card{position: relative;
   margin: auto;
   background: transparent;box-shadow: none}
 .koti-action{background: red;border-radius: 50%;margin: auto}
+
+/**
+Body animation
+ */
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
