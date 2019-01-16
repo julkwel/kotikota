@@ -13,8 +13,8 @@ export class localStorageService {
         localStorage.setItem(cle,JSON.stringify(valeur));
     }
 
-    public getLocalStorage(valeur){
-        return JSON.parse(localStorage.getItem(valeur));
+    getLocalstorage(cle) {
+        return JSON.parse(localStorage.getItem(cle));
     }
 
     public delLocalStorage(cle){

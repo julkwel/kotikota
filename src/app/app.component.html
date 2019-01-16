@@ -5,7 +5,13 @@
     <links>
         <ul class="navbar-nav mr-auto"></ul>
         <span class="navbar-text white-text">
-            <a href="" routerLink="/login">Login</a>
+            <a href="" routerLink="/login">{{isLogged ? name.name : 'Login'}}
+                <!--<button *ngIf="isLogged" (click)="logOut()">Oui</button>-->
+                  <a mdbBtn  *ngIf="isLogged" (click)="logOut()" floating="true"
+                     color="secondary" style="border-radius: 50%;display: inline-block;margin: 5px" size="lg" mdbWavesEffect>
+                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+                  </a>
+            </a>
         </span>
     </links>
 </mdb-navbar>

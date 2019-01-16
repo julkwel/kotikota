@@ -2,8 +2,7 @@
 
 *{font-family: 'Montserrat', sans-serif;font-weight: 500}
 body{width: 100%;height: 100vh;background: black!important;overflow: hidden;margin: 0;padding: 0}
-.koti-action .card{position: absolute;
-  top: 20%;
-  left: 10%;
+.koti-action .card{position: relative;
+  margin: auto;
   background: transparent;box-shadow: none}
 .koti-action{background: red;border-radius: 50%;margin: auto}

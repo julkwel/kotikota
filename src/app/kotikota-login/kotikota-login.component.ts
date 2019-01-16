@@ -8,6 +8,7 @@ import {
   SocialLoginModule
 } from "angular-6-social-login";
 import {Router} from "@angular/router";
+import {loginService} from "../services/login.service";
 
 @Component({
   selector: 'app-kotikota-login',
@@ -21,7 +22,8 @@ export class KotikotaLoginComponent implements OnInit {
 
   constructor(private socialAuthService:AuthService,
              private router:Router,
-             private localStorageService:localStorageService) { }
+             private localStorageService:localStorageService,
+              private login:loginService) { }
 
   public socialSignIn(socialPlatform : string) {
     let socialPlatformProvider;
@@ -40,7 +42,10 @@ export class KotikotaLoginComponent implements OnInit {
           localStorage.setItem('image',userData.image);
           this.localStorageService.setLocalStorage('userdata',userData);
           if (userData){
-            this.router.navigate(['/login']);
+            this.router.navigate(['/dashboard']);
+            this.login.login = true;
+          }else {
+              this.router.navigate(['/login']);
           }
           console.log(socialPlatform + " sign in data : " , userData);
         }
