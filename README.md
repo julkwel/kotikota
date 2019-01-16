@@ -29,3 +29,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Inona no tanjona?
 
 Hanamboatra application kely ahafahana manao kotikota isika n'aizan'aiza no misy anao, sady ahafahana mifamonjy ihany koa.
+
+## Informations d'utilisateurs 
+
+Tsy azonay atao ary tsy mitahiry mots de passen'ny utilisateur velively ity application ity amin'ireo tambazotra sosialy.
