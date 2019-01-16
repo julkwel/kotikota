@@ -1,21 +1,32 @@
 <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
-    <mdb-navbar-brand>
-        <a class="navbar-brand" href=""><img style="width: 50px;height: 50px" src="./assets/logo/apple-icon-114x114.png"/>&nbsp;KOTIKOTA</a>
-    </mdb-navbar-brand>
-    <links>
-        <ul class="navbar-nav mr-auto"></ul>
-        <span class="navbar-text white-text">
-            <a href="" routerLink="/login">{{isLogged ? name.name : 'Login'}}
-                <!--<button *ngIf="isLogged" (click)="logOut()">Oui</button>-->
-                  <a mdbBtn  *ngIf="isLogged" (click)="logOut()" floating="true"
-                     color="secondary" style="border-radius: 50%;display: inline-block;margin: 5px" size="lg" mdbWavesEffect>
-                    <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
-                  </a>
-            </a>
-        </span>
-    </links>
+  <mdb-navbar-brand>
+    <a class="navbar-brand" href=""
+      ><img
+        style="width: 50px;height: 50px"
+        src="./assets/logo/apple-icon-114x114.png"
+      />&nbsp;KOTIKOTA</a
+    >
+  </mdb-navbar-brand>
+  <links>
+    <ul class="navbar-nav mr-auto"></ul>
+    <span class="navbar-text white-text">
+      <a href="" routerLink="/login"
+        >{{ isLogged ? name.name : "Login" }}
+        <!--<button *ngIf="isLogged" (click)="logOut()">Oui</button>-->
+        <a
+          mdbBtn
+          *ngIf="isLogged"
+          (click)="logOut()"
+          floating="true"
+          color="secondary"
+          style="border-radius: 50%;display: inline-block;margin: 5px"
+          size="lg"
+          mdbWavesEffect
+        >
+          <i class="fa fa-arrow-circle-right" aria-hidden="true"></i>
+        </a>
+      </a>
+    </span>
+  </links>
 </mdb-navbar>
-<div class="col-md-12">
-    <router-outlet></router-outlet>
-</div>
-
+<div class="col-md-12"><router-outlet></router-outlet></div>
