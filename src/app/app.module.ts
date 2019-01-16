@@ -13,7 +13,7 @@ import {
 } from "angular-6-social-login";
 // import {Social} from "../../../ktk-bc/src/app/utils/Constant.Social";
 import { MDBBootstrapModule } from 'angular-bootstrap-md';
-import {Social} from "./utils/Constant.Social";
+import { Social } from "./utils/Constant.Social";
 import { KotikotaDashboardComponent } from './kotikota-dashboard/kotikota-dashboard.component';
 
 export function getAuthServiceConfigs(){
