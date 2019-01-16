@@ -1,27 +1,31 @@
 # KotikotaFront
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.1.
+Projet natao tamin'ny angular v 6.0.1.
 
-## Development server
+## Raha hidevy ianao dia 
+```
+git clone repos
+cd repos
+npm install
+ng serve
+
+```
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Komandy angular
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`ng generate component component-name` 
+`ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Alohan'ny hi-pushenao dia manaova build vaovao ahafahanao mahita ny zavatra nataonao en ligne avy hatrany
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+`ng build --prod --base-href "https://julkwel.github.io/kotikota/" `
 
-## Running unit tests
+## Raha hi-teste dia 
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+`ng test`
 
-## Running end-to-end tests
+## Inona no tanjona?
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Hanamboatra application kely ahafahana manao kotikota isika n'aizan'aiza no misy anao, sady ahafahana mifamonjy ihany koa.
