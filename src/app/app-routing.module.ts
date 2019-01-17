@@ -6,12 +6,14 @@ import { KotikotaFrontComponent } from "./kotikota-front/kotikota-front.componen
 import { KotikotaDashboardComponent } from "./kotikota-dashboard/kotikota-dashboard.component";
 import { TeamFormComponent } from './kotikota/team-form/team-form.component';
 import { GiveupFormComponent } from './kotikota/giveup-form/giveup-form.component';
+import { DonateComponent } from './kotikota/donate/donate.component';
 
 const appRoutes: Routes = [
   { path: "login", component: KotikotaLoginComponent },
   { path: "dashboard", component: KotikotaDashboardComponent },
   { path: "team-build", component: TeamFormComponent },
   { path: "giveup", component: GiveupFormComponent },
+  { path: "donate", component: DonateComponent },
   { path: "", component: KotikotaFrontComponent }
 ];
 
