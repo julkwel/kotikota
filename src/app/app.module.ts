@@ -16,6 +16,7 @@ import {Social} from "./utils/Constant.Social";
 import { KotikotaDashboardComponent } from './kotikota-dashboard/kotikota-dashboard.component';
 import { TeamFormComponent } from './kotikota/team-form/team-form.component';
 import { GiveupFormComponent } from './kotikota/giveup-form/giveup-form.component';
+import { DonateComponent } from './kotikota/donate/donate.component';
 
 export function getAuthServiceConfigs(){
   let config: AuthServiceConfig;
@@ -45,7 +46,8 @@ export function getAuthServiceConfigs(){
     KotikotaFrontComponent,
     KotikotaDashboardComponent,
     TeamFormComponent,
-    GiveupFormComponent
+    GiveupFormComponent,
+    DonateComponent
   ],
   imports: [
     BrowserModule,
