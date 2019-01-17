@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>Ireo marary mila vonjy</h1>
+  <a routerLink="/" mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0"
+    mdbWavesEffect>
+    <i class="fa fa-arrow-left pull-left"></i> Hiverina</a>
+  <div class="row">
+    <div class="col-md-3" *ngFor="let item of items">
+      <mdb-card>
+        <mdb-card-body>
+          <mdb-card-text>
+            {{item.content}}
+          </mdb-card-text>
+          <a href="#!" class="card-link">Hanala <i class="fa fa-close"></i></a>
+          <a href="#!" class="card-link">Hanampy <i class="fa fa-ambulance"></i> </a>
+        </mdb-card-body>
+      </mdb-card>
+    </div>
+  </div>
+</div>
