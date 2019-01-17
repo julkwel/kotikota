@@ -57,3 +57,13 @@ Body animation
     background-position: 0% 50%
   }
 }
+/*
+* Scrollbar style
+*/
+::-webkit-scrollbar{
+	width: 8px;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background-color: #ccc;
+}
