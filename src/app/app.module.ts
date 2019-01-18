@@ -17,6 +17,7 @@ import { KotikotaDashboardComponent } from './kotikota-dashboard/kotikota-dashbo
 import { TeamFormComponent } from './kotikota/team-form/team-form.component';
 import { GiveupFormComponent } from './kotikota/giveup-form/giveup-form.component';
 import { DonateComponent } from './kotikota/donate/donate.component';
+import { KotikotaFooterComponent } from './kotikota-footer/kotikota-footer.component';
 
 export function getAuthServiceConfigs(){
   let config: AuthServiceConfig;
@@ -47,7 +48,8 @@ export function getAuthServiceConfigs(){
     KotikotaDashboardComponent,
     TeamFormComponent,
     GiveupFormComponent,
-    DonateComponent
+    DonateComponent,
+    KotikotaFooterComponent
   ],
   imports: [
     BrowserModule,
