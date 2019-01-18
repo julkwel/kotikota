@@ -1,26 +1,31 @@
-import { NgModule }              from '@angular/core';
-import { RouterModule, Routes }  from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
 
-import {KotikotaLoginComponent} from "./kotikota-login/kotikota-login.component";
-import {AppComponent} from './app.component';
-import {KotikotaFrontComponent} from "./kotikota-front/kotikota-front.component";
-import {KotikotaDashboardComponent} from "./kotikota-dashboard/kotikota-dashboard.component";
+import { KotikotaLoginComponent } from "./kotikota-login/kotikota-login.component";
+import { KotikotaFrontComponent } from "./kotikota-front/kotikota-front.component";
+import { KotikotaDashboardComponent } from "./kotikota-dashboard/kotikota-dashboard.component";
+import { TeamFormComponent } from './kotikota/team-form/team-form.component';
+import { GiveupFormComponent } from './kotikota/giveup-form/giveup-form.component';
+import { DonateComponent } from './kotikota/donate/donate.component';
 
 const appRoutes: Routes = [
-  { path: 'login', component: KotikotaLoginComponent },
-  { path: 'dashboard', component: KotikotaDashboardComponent },
-  { path: '',component:KotikotaFrontComponent },
+  { path: "login", component: KotikotaLoginComponent },
+  { path: "dashboard", component: KotikotaDashboardComponent },
+  { path: "team-build", component: TeamFormComponent },
+  { path: "giveup", component: GiveupFormComponent },
+  { path: "donate", component: DonateComponent },
+  { path: "", component: KotikotaFrontComponent }
 ];
 
 @NgModule({
   imports: [
     RouterModule.forRoot(
-        appRoutes,
-        { enableTracing: true }
+      appRoutes,
+      { enableTracing: true }
     )
   ],
   exports: [
     RouterModule
   ]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }
