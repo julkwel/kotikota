@@ -1,19 +1,22 @@
-<div class="container">
-  <h1>Ireo marary mila vonjy</h1>
-  <a routerLink="/" mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0"
-    mdbWavesEffect>
-    <i class="fa fa-arrow-left pull-left"></i> Hiverina</a>
-  <div class="row">
-    <div class="col-md-3" *ngFor="let item of items">
-      <mdb-card>
-        <mdb-card-body>
-          <mdb-card-text>
-            {{item.content}}
-          </mdb-card-text>
-          <a href="#!" class="card-link">Hanala <i class="fa fa-close"></i></a>
-          <a href="#!" class="card-link">Hanampy <i class="fa fa-ambulance"></i> </a>
-        </mdb-card-body>
-      </mdb-card>
-    </div>
-  </div>
+<a routerLink="/" mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0"
+  mdbWavesEffect>
+  <i class="fa fa-arrow-left pull-left"></i> Hiverina</a>
+<div class="col-md-12">
+  <mdb-carousel class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
+    [animation]="'slide'">
+    <mdb-carousel-item *ngFor="let item of slides; let i = index">
+      <div class="col-md-4" *ngFor="let card of item">
+        <mdb-card class="my-1">
+          <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+          <mdb-card-body>
+            <mdb-card-title>
+              <h4>{{card.title}}</h4>
+            </mdb-card-title>
+            <p>{{card.description}}</p>
+            <a href="#" mdbBtn color="primary" class="waves-light" mdbWavesEffect>{{card.buttonText}}</a>
+          </mdb-card-body>
+        </mdb-card>
+      </div>
+    </mdb-carousel-item>
+  </mdb-carousel>
 </div>

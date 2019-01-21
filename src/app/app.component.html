@@ -1,11 +1,11 @@
-<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark indigo">
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark cyan darken-3">
     <mdb-navbar-brand>
-        <a class="navbar-brand" href=""><img style="width: 50px;height: 50px" src="./assets/logo/apple-icon-114x114.png"/>&nbsp;KOTIKOTA</a>
+        <a class="navbar-brand" href=""><img style="width: 50px;height: 50px" src="./assets/logo/apple-icon-114x114.png"/>&nbsp;KÔTIKÔTA</a>
     </mdb-navbar-brand>
     <links>
         <ul class="navbar-nav mr-auto"></ul>
         <span class="navbar-text white-text">
-            <a href="" routerLink="/login">{{isLogged ? name.name : 'Login'}}
+            <a href="" routerLink="/login">{{isLogged ? name.name : 'Hiditra'}}
                 <!--<button *ngIf="isLogged" (click)="logOut()">Oui</button>-->
                   <a mdbBtn  *ngIf="isLogged" (click)="logOut()" floating="true"
                      color="secondary" style="border-radius: 50%;display: inline-block;margin: 5px" size="lg" mdbWavesEffect>
@@ -15,7 +15,12 @@
         </span>
     </links>
 </mdb-navbar>
-<div class="col-md-12">
-    <router-outlet></router-outlet>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <router-outlet></router-outlet>
+        </div>
+    </div>
 </div>
+<app-kotikota-footer></app-kotikota-footer>
 
