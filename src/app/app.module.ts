@@ -18,6 +18,7 @@ import { TeamFormComponent } from './kotikota/team-form/team-form.component';
 import { GiveupFormComponent } from './kotikota/giveup-form/giveup-form.component';
 import { DonateComponent } from './kotikota/donate/donate.component';
 import { KotikotaFooterComponent } from './kotikota-footer/kotikota-footer.component';
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 export function getAuthServiceConfigs(){
   let config: AuthServiceConfig;
@@ -54,6 +55,8 @@ export function getAuthServiceConfigs(){
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     MDBBootstrapModule.forRoot()
   ],
   providers: [

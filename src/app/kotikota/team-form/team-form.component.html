@@ -1,5 +1,6 @@
 <div class="col-md-4 col-md-offset-4 m-auto">
-  <a routerLink="/"mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0" mdbWavesEffect>
+  <a routerLink="/" mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0"
+    mdbWavesEffect>
     <i class="fa fa-arrow-left pull-left"></i> Hiverina</a>
   <mdb-card>
     <mdb-card-header class="info-color white-text text-center py-4">
@@ -11,32 +12,31 @@
 
 
     <mdb-card-body class="px-lg-5 pt-0">
+        <form #f="ngForm" (ngSubmit)="onSubmit(f)" class="text-center" style="color: #757575;">
 
+          <div class="form-row">
+            <div class="col">
 
-      <form class="text-center" style="color: #757575;">
-
-        <div class="form-row">
-          <div class="col">
-
-            <div class="md-form">
-              <input type="text" id="name" class="form-control" mdbInputDirective>
-              <label for="name">Anaran'ny ekipako</label>
+              <div class="md-form">
+                <input type="text" name="name" id="name" #name class="form-control" mdbInputDirective ngModel required
+                  minlength="4" maxlength="15">
+                <label for="name">Anaran'ny ekipako</label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="md-form">
-          <input type="password" id="pswd" class="form-control" aria-describedby="pswd" mdbInputDirective>
-          <label for="pswd">Teny miafina</label>
-        </div>
+          <div class="md-form">
+            <input type="password" name="password" id="password" #password class="form-control" aria-describedby="password"
+              mdbInputDirective ngModel required minlength="8">
+            <label for="password">Teny miafina</label>
+          </div>
 
-        <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0"
-          mdbWavesEffect type="submit">Vita</button>
+          <button mdbBtn color="info" outline="true" rounded="true" block="true" class="my-4 waves-effect z-depth-0"
+            mdbWavesEffect type="submit">Vita</button>
 
-        <hr>
+          <hr>
 
-      </form>
-
+        </form>
 
     </mdb-card-body>
 
