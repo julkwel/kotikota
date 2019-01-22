@@ -2,12 +2,11 @@
   mdbWavesEffect>
   <i class="fa fa-arrow-left pull-left"></i> Hiverina</a>
 <div class="col-md-12">
-  <mdb-carousel class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'"
-    [animation]="'slide'">
+  <mdb-carousel class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
     <mdb-carousel-item *ngFor="let item of slides; let i = index">
       <div class="col-md-4" *ngFor="let card of item">
         <mdb-card class="my-1">
-          <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+          <mdb-card-img [src]="card.img" alt="{{card.description}}"></mdb-card-img>
           <mdb-card-body>
             <mdb-card-title>
               <h4>{{card.title}}</h4>

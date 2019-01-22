@@ -46,38 +46,6 @@ export class DonateComponent implements OnInit {
       buttonText: "Button",
       img:
         "../../../assets/Kôtikôta.png"
-    },
-    {
-      title: "Card Title 6",
-      description:
-        "Some quick example text to build on the card title and make up the bulk of the card content",
-      buttonText: "Button",
-      img:
-        "../../../assets/Kôtikôta.png"
-    },
-    {
-      title: "Card Title 7",
-      description:
-        "Some quick example text to build on the card title and make up the bulk of the card content",
-      buttonText: "Button",
-      img:
-        "../../../assets/Kôtikôta.png"
-    },
-    {
-      title: "Card Title 8",
-      description:
-        "Some quick example text to build on the card title and make up the bulk of the card content",
-      buttonText: "Button",
-      img:
-        "../../../assets/Kôtikôta.png"
-    },
-    {
-      title: "Card Title 9",
-      description:
-        "Some quick example text to build on the card title and make up the bulk of the card content",
-      buttonText: "Button",
-      img:
-        "../../../assets/Kôtikôta.png"
     }
   ];
   slides: any = [[]];
