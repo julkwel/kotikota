@@ -7,9 +7,6 @@ import {Component, OnInit} from '@angular/core';
 })
 export class KotikotaFrontComponent implements OnInit {
 
-    constructor() {
-    }
-
     texte: any = [
         {
             title: 'Hanangana ekipa',
@@ -36,6 +33,9 @@ export class KotikotaFrontComponent implements OnInit {
             route: 'donate'
         }
     ];
+
+    constructor() {
+    }
 
     ngOnInit() {}
 
